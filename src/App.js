@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import ChatPage from './page/ChatPage';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="App-name" style="display:inline;">Student Assistant Bot</h1>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<ChatPage />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
