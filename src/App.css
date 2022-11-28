@@ -1,3 +1,7 @@
+html {
+  overflow: scroll;
+}
+
 .App {
   background-color: #d8eaf8;
   min-height: 100vh;
@@ -29,7 +33,7 @@
 
 .input {
   height: 40px;
-  width:85%;
+  width:90%;
   border: none;
   outline: none;
   font-size: 18px;
@@ -45,9 +49,9 @@
 .send {
   font-size: 15px;
   background-color: #8da4f1;
-  border: none;
-  width: 7%;
+  width: 8%;
   height: 40px;
+  border-radius: 10px;
   color: #ffffff;
 }
 
@@ -100,10 +104,25 @@
   background-color: #8da4f1;
   color: white;
   border-radius: 10px 0px 10px 10px;
+  padding: 10px 20px;
+  max-width: max-content;
 }
 
 .messages {
   padding: 10px;
   height: calc(70vh);
   overflow: auto;
+}
+
+.fB {
+  position: absolute;
+  top:20px;
+  right:5px;
+  font-size: 15px;
+  background-color: #f1b08d;
+  border-radius: 10px;
+  width: 12%;
+  height: 40px;
+  border: none;
+  color: #ffffff;
 }

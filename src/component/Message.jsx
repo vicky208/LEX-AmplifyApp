@@ -8,18 +8,18 @@ const Message = ({ message }) => {
       ref.current?.scrollIntoView({ behavior: "smooth" });
     }, [message]);*/
 
-    /*if(message.type === 0){
+    if(message.type === 0){
         return (
-            <div className="userMessage">
+           <div className="userMessage">
                 <div className="messageInfo">
-                    <img src="./account.png"/>
+                    <img src="./account.png" height="50px"/>
                 </div>
                 <div className="userContent">
-                    <p className="p2">{message.text}</p>
+                    <p className="p2">{message.content}</p>
                 </div>
             </div>
         );
-    }*/
+    }
   
     return (
         <div className="message">
@@ -27,7 +27,7 @@ const Message = ({ message }) => {
                 <img src="./chatbot.png" height="50px"/>
             </div>
             <div className="messageContent">
-                <p className="p1">Hello, What Can I Help You?</p>
+                <p className="p1">{message.content}</p>
             </div>
         </div>
     );
