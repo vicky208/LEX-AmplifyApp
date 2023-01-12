@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import ChatPage from './page/ChatPage';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Amplify, Interactions } from 'aws-amplify';
+import awsconfig from './aws-exports';
+
+Amplify.configure(awsconfig);
 
 function App() {
   return (
