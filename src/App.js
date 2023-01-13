@@ -3,7 +3,7 @@ import './App.css';
 import ChatPage from './page/ChatPage';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Amplify, Interactions } from 'aws-amplify';
-import awsconfig from './exports';
+import awsconfig from './export';
 
 Amplify.configure(awsconfig);
 
